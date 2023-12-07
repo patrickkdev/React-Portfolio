@@ -1,6 +1,6 @@
 import { Colors } from '@/pages/_app';
 import { ChevronRight, Done, Error } from '@mui/icons-material';
-import { Button, CircularProgress, TextField, ThemeProvider, createTheme } from '@mui/material';
+import { Button, ButtonOwnProps, ButtonTypeMap, CircularProgress, ExtendButtonBase, TextField, ThemeProvider, createTheme } from '@mui/material';
 import React from 'react'
 
 enum AsyncStatus {
@@ -142,7 +142,7 @@ const Form = () => {
           size='large'
           variant="contained"
           fullWidth 
-          {...submitButtonProps as any}
+          {...submitButtonProps as ButtonOwnProps}
         >
           {status === AsyncStatus.PENDING ? 'Enviando...' : status === AsyncStatus.SUCCESS ? 'Enviado' : 'Enviar'}
         </Button>
