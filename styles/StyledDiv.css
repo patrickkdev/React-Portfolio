@@ -1,0 +1,66 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  from  { --gradient-angle: 0deg; }
+  to    { --gradient-angle: 360deg; }
+}
+
+@keyframes rotation2 {
+  0%    { --gradient-angle: 0deg; opacity: 1;}
+  50%   { opacity: 1;}
+  100%  { --gradient-angle: 420deg; opacity: 1; }
+}
+
+.styled-div {
+  background-color: black;
+  border-radius: 0.5rem;
+  position: relative;
+
+  &::before, &::after {
+    transition: all 1s cubic-bezier(.25,.5,.25,1);
+    content: "";
+    position: absolute;
+    margin: -4px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle), 
+      var(--color-3),
+      var(--color-4),
+      var(--color-5),
+      var(--color-4), 
+      var(--color-3)
+    );
+    border-radius: inherit;
+    animation: rotation 5s linear infinite;
+  };
+  
+  &::after {
+    filter: blur(0.4rem);
+  };
+  
+  &:hover::after {
+    filter: blur(0.8rem);
+  }
+  
+  /* &:hover::before, */
+  &:hover::before {
+    animation: rotation 5s linear infinite;
+    /* opacity: 0; */
+    background: conic-gradient(
+      from var(--gradient-angle), 
+      var(--color-3),
+      var(--color-4),
+      var(--color-5),
+      var(--color-4), 
+      var(--color-4)
+    );
+  }
+}
