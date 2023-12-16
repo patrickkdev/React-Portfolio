@@ -18,9 +18,10 @@ const theme = createTheme({
   },
 })
 
-const telegramToken = '6743135294:AAHtwclBu7DNcL6M19RDwDkrxPrDWNjpES0'
 
 const Form = () => {
+  
+  const telegramToken = process.env.TELEGRAM_TOKEN;
 
   const [status, setStatus] = React.useState<AsyncStatus>(AsyncStatus.IDLE)
 

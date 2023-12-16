@@ -23,37 +23,37 @@ const skills = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
   },
   {
-    name: 'Python',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
-  },
-  {
-    name: 'Golang',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg'
-  },
-  {
-    name: 'MySQL',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
-  },
-  {
-    name: 'Flask',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg'
+    name: 'React',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
   },
   {
     name: 'Node',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
   },
+  // {
+  //   name: 'Electron',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg'
+  // },
   {
-    name: 'React',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    name: 'Python',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
   },
+  // {
+  //   name: 'Flask',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg'
+  // },
   {
-    name: 'Electron',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg'
+    name: 'MySQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
   },
-  {
-    name: 'Github',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
-  },
+  // {
+  //   name: 'Golang',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg'
+  // },
+  // {
+  //   name: 'Github',
+  //   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
+  // },
 ]
 
 const SkilLDisplay = () => {
@@ -65,7 +65,7 @@ const SkilLDisplay = () => {
             return (
               <div key={skill.name} className="skill-display__item">
                 <div className="skill-display__item__container">
-                  <img src={skill.icon} alt="item_icon" className="skill-display__item__icon"/>
+                  <img src={skill.icon} width="50" alt="item_icon" className="skill-display__item__icon"/>
                   <p className="skill-display__item__name">{skill.name}</p>
                 </div>
               </div>

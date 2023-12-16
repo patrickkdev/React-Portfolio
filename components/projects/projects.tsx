@@ -53,26 +53,6 @@ const projects: Project[] = [
     link: "https://gerenciamentodebanca.netlify.app",
     visibility: "private",
   },
-  {
-    accentColor: Colors.Green,
-    title: "Lista de Tarefas",
-    image: "todo-list-mockup.png",
-    techStack: ["React", "Vite"],
-    description: "Uma lista de tarefas simples que salva os dados no localStorage com função de criar tarefa, atualizar, remover, marcar como concluída, etc. Desenvolvido com React e Vite.",
-    githubLink: "https://github.com/patrickkdev/todo-app",
-    link: "https://simpl-todo-app.netlify.app/",
-    visibility: "public"
-  },
-  {
-    accentColor: Colors.Purple,
-    title: "Visualizador de Imagens",
-    image: "picsum-viewer-mockup.jpeg",
-    techStack: ["React", "Next.js"],
-    description: "Web app que consome a API do Picsum e gera um grid responsivo de imagens com paginação automatica e manual. Desenvolvido com React e Next.js.",
-    githubLink: "https://github.com/patrickkdev/picsum-image-viewer",
-    link: "https://picsum-image-viewer.netlify.app/",
-    visibility: "public"
-  },
 ]
 
 const Projects = () => {
