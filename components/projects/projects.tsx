@@ -68,12 +68,12 @@ const Projects = () => {
               <Typewritter 
                 onInit={(typewriter) => {
                   typewriter
-                  .pauseFor(250)
+                  .pauseFor(200)
                   .typeString("Veja alguns dos meus trabalhos :)")
                   .start();
                 }}
                 options={{
-                  delay: 50,
+                  delay: 40,
                 }}
               />
             )

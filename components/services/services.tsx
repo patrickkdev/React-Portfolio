@@ -55,7 +55,7 @@ const Services = () => {
                 .start();
               }}
               options={{
-                delay: 50,
+                delay: 40,
                 cursor: "",
               }}
             />
