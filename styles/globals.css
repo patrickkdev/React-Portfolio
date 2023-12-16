@@ -281,6 +281,59 @@ a {
   }
 }
 
+.about {
+  color: white;
+  background-color: var(--dark-background);
+  padding: 48px;  
+  min-height: 100vh;
+
+  & h1 {
+    font-size: 5rem;
+    margin-top: 64px;
+  }
+  
+  & hr {    
+    margin-bottom: 48px;
+  }
+
+  & h3 {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 32% cover 32%;
+    margin-bottom: 12px;
+  }
+
+  & p {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 32%;
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+  }
+  
+  & strong {
+    font-size: 1.45rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    padding: 12px;
+  }
+  
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .projects-section {
   position: sticky;
   top: 0;
@@ -416,60 +469,6 @@ a {
         }
       }
     }
-  }
-}
-
-
-.about {
-  color: white;
-  background-color: var(--dark-background);
-  padding: 48px;  
-  min-height: 100vh;
-
-  & h1 {
-    font-size: 5rem;
-    margin-top: 64px;
-  }
-  
-  & hr {    
-    margin-bottom: 48px;
-  }
-
-  & h3 {
-    animation: fade-in linear both;
-    animation-timeline: view();
-    animation-range: entry 32% cover 32%;
-    margin-bottom: 12px;
-  }
-
-  & p {
-    animation: fade-in linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 32%;
-    font-size: 1.4rem;
-    margin-bottom: 56px;
-  }
-  
-  & strong {
-    font-size: 1.45rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about {
-    padding: 12px;
-  }
-  
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
