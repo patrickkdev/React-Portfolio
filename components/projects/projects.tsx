@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Site do 2Gain",
     image: "2gain-website-mockup.png",
     techStack: ["React", "Next.js"],
-    description: "O site do 2Gain é destaca as funcionalidades e a importância da calculadora para traders do mercado de Opções Binárias. Desenvolvido com React e Next.js, o site fornece aos usuários uma visão abrangente do 2Gain, incluindo casos de uso, depoimentos e informações essenciais para os usuários.",
+    description: "Desenvolvido com React e Next.js, o site do 2Gain fornece aos usuários uma visão abrangente da ferramenta, incluindo casos de uso e depoimentos além de destacar as funcionalidades e a importância dessa ferramenta para traders.",
     link: "https://gerenciamentodebanca.netlify.app",
     visibility: "private",
   },

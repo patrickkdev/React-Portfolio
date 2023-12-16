@@ -36,11 +36,14 @@ const ProjectDisplay = ({project, index}: {project: Project, index: number}) => 
             </p>
             <p>{project.description}</p>
             <Button sx={{backgroundColor: project.accentColor}} variant="contained" href={project.link} target="_blank" rel="noreferrer" endIcon={<ChevronRight />}>Conhecer</Button>
-            <Tooltip title={project.visibility === "public" ? "Repositório Público" : "Repositório Privado"} sx={{pointerEvents: "hover"}}>
-              <Button sx={{opacity: project.visibility === "public" ? 1 : 0.3}} color="inherit" variant="contained" { ...project.visibility === "public" ? {href: project.githubLink, target:"_blank", rel:"noreferrer"} : {}} endIcon={<GitHub />}>
-                Github
-              </Button>
-            </Tooltip>
+            {
+              project.visibility !== "private" &&
+              <Tooltip title={project.visibility === "public" ? "Repositório Público" : "Repositório Privado"} sx={{pointerEvents: "hover"}}>
+                <Button sx={{opacity: project.visibility === "public" ? 1 : 0.3}} color="inherit" variant="contained" { ...project.visibility === "public" ? {href: project.githubLink, target:"_blank", rel:"noreferrer"} : {}} endIcon={<GitHub />}>
+                  Github
+                </Button>
+              </Tooltip>
+            }
           </div>
         </div>
         <div className='project-display__image' style={{backgroundColor: project.accentColor}}>
