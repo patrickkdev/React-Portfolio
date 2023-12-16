@@ -51,7 +51,8 @@ const projects: Project[] = [
     techStack: ["React", "Next.js"],
     description: "Desenvolvido com React e Next.js, o site do 2Gain fornece aos usuários uma visão abrangente da ferramenta, incluindo casos de uso e depoimentos além de destacar as funcionalidades e a importância dessa ferramenta para traders.",
     link: "https://gerenciamentodebanca.netlify.app",
-    visibility: "private",
+    githubLink: "https://github.com/patrickkdev/2Gain-Landing-Page",
+    visibility: "public",
   },
 ]
 
