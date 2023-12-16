@@ -123,7 +123,6 @@ const Form = () => {
           label="Mensagem *"
           multiline
           rows={4}
-          defaultValue="Default Value"
           variant="filled"
           value={data.message}
           onChange={(e) => setData({...data, message: e.target.value})}

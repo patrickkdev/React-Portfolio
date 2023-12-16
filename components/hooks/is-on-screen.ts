@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { RefObject, useEffect, useMemo, useState } from "react";
 
 export default function useOnScreen(ref: RefObject<HTMLElement>) {
@@ -13,10 +14,6 @@ export default function useOnScreen(ref: RefObject<HTMLElement>) {
     observer.observe(ref.current as Element)
     return () => observer.disconnect()
   }, [])
-
-  useEffect(() => {
-    console.log(isIntersecting, 'isIntersecting')
-  }, [isIntersecting])
 
   return isIntersecting
 }
