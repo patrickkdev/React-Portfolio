@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import { ChevronRight, GitHub } from '@mui/icons-material';
-import { Button, Card, Grid, Typography } from '@mui/material';
 import ProjectDisplay, { Project } from './project-display';
 import { Colors } from '@/pages/_app';
 import Typewritter from 'typewriter-effect';
