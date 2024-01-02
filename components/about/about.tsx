@@ -43,7 +43,7 @@ const About = () => {
 
         <h3>Aprendizado Constante</h3>
 
-        <p>Embora ainda não tenha concluído minha formação acadêmica, minha busco por conhecimento é contínua. Minha abordagem autodidata vai além da teoria, refletindo-se em meu envolvimento ativo em projetos práticos. Estou aberto a oportunidades que valorizem não apenas a formação acadêmica, mas também reconheçam a paixão, dedicação e habilidades práticas que desenvolvi ao longo dos anos.</p>
+        <p>Embora ainda não tenha concluído minha formação acadêmica, minha busca por conhecimento é contínua. Minha abordagem autodidata vai além da teoria, refletindo-se em meu envolvimento ativo em projetos práticos. Estou aberto a oportunidades que valorizem não apenas a formação acadêmica, mas também reconheçam a paixão, dedicação e habilidades práticas que desenvolvi ao longo dos anos.</p>
       </Container>
     </div>
   )
