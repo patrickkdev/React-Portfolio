@@ -39,7 +39,7 @@ const projects: Project[] = [
     image: "gym-website-mockup.png",
     techStack: ["React", "Vite.js"],
     description: "Website dinâmico e responsivo, construído com React, Vite.js e estilizado com CSS para proporcionar uma interatividade fluida e um design atraente.",
-    link: "https://gym.vercel.app",
+    link: "https://academiavitalfit.vercel.app",
     visibility: "public",
   },
   {
